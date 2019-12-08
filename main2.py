@@ -70,7 +70,7 @@ tf.add_to_collection(name='graph_kernel', value=tf.cast(tf.constant(Lk), tf.floa
 
 
 if __name__ == '__main__':
-	model_train(PeMS, blocks, args,load=True)
+	model_train(PeMS, blocks, args,load=False)
 	model_test(PeMS, 100, n_his, n_pred, args.inf_mode)	
 	# os.system("shutdown -s -t 0");
 	pass
